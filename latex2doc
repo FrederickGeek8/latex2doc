@@ -21,4 +21,4 @@ fi
 file=$(basename "$filename")
 
 pdflatex ${PWD}/$filename
-unoconv -f doc -t ${PWD}/$filename -o ${PWD}/ ${filename%.*}.pdf
+unoconv -f doc ${PWD}/${filename%.*}.pdf
