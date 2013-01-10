@@ -20,5 +20,5 @@ fi
 
 file=$(basename "$filename")
 
-pdflatex ${PWD}/$filename
-unoconv -f doc ${PWD}/${filename%.*}.pdf
+mk4ht oolatex ${PWD}/$filename
+unoconv -f doc ${filename%.*}.odt
